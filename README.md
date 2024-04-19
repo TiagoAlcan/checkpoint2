@@ -106,5 +106,5 @@ http://localhost:8080
 
 ## Referencias
 
- - [GitHub](https://github.com/TiagoAlcan)
- - [DockerHub](https://hub.docker.com/u/tiagoalcan)
+Meu GitHub: - [GitHub](https://github.com/TiagoAlcan)
+Meu DockerHub: - [DockerHub](https://hub.docker.com/u/tiagoalcan)
