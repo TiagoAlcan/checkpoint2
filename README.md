@@ -59,7 +59,7 @@ docker build -t <username>/checkpoint2 .
 
 
 ```
-docker tag checkpoint1 tiagoalcan/checkpoint2
+docker tag checkpoint2 tiagoalcan/checkpoint2
 ```
 
 
