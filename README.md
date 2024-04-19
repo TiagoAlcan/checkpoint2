@@ -44,14 +44,14 @@ docker run -d -p 8080:8080 -e PROFILE=<prd|dev|stg> checkpoint2
 * Login
 
 ```
-docker login -u <username>
+docker login -u tiagoalcan
 ```
 
 * Criar imagem pronta para upload (método 1 - criando nova imagem)
 
 
 ```
-docker build -t <username>/checkpoint2 .
+docker build -t tiagoalcan/checkpoint2 .
 ```
 
 
@@ -72,17 +72,35 @@ docker push tiagoalcan/checkpoint2
 
 *Comando docker para executar a aplicação a partir do docker hub com o profile "dev" (desenvolvimento) - H2
 
+- Para acessar colocar as seguintes informções:
+  
+- Username: sa
+- Password: password
+- Url: jdbc:h2:mem:testdb
+
 ```
 docker run -d -p 8080:8080 -e PROFILE=dev tiagoalcan/checkpoint2
 ```
 
 *Comando docker para executar a aplicação a partir do docker hub com o profile "prd" (produção) - Oracle SQL developer
 
+- Para acessar colocar as seguintes informções:
+  
+- Username: pf1524
+- Password: password
+- Url: jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl
+
 ```
 docker run -d -p 8080:8080 -e PROFILE=prd tiagoalcan/checkpoint2 
 ```
 
 *Comando docker para executar a aplicação a partir do docker hub com o profile "stg"(stagging - homologação) - MySQL
+
+- Para acessar colocar as seguintes informções:
+  
+- Username: root
+- Password: root_pwd
+- Url: jdbc:mysql://localhost:3306/rh?createDatabaseIfNotExist=true
 
 ```
 docker run -d -p 8080:8080 -e PROFILE=stg tiagoalcan/checkpoint2 
@@ -98,6 +116,7 @@ http://localhost:8080
 ## Features (Funcionalidades)
 
 - Múltiplos profiles
+- Banco de dados relacional
 
 ## Contatos
 
@@ -106,6 +125,6 @@ http://localhost:8080
 
 ## Referencias
 
-Meu GitHub: - [GitHub](https://github.com/TiagoAlcan)
+Meu [GitHub](https://github.com/TiagoAlcan)
 
-Meu DockerHub: - [DockerHub](https://hub.docker.com/u/tiagoalcan)
+Meu [DockerHub](https://hub.docker.com/u/tiagoalcan)
